@@ -8,7 +8,7 @@ import { IN_DEVELOPMENT } from "config/vars";
 const PORT = process.env.PORT || 8080;
 
 const app = express();
-app.use(cors);
+app.use(cors());
 app.use(morgan(IN_DEVELOPMENT ? "dev" : "combined"));
 
 app.use(routes);
