@@ -1,0 +1,11 @@
+// https://www.npmjs.com/package/babel-plugin-module-resolver
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "*": [
+                "src/*"
+            ],
+        }
+    }
+}
