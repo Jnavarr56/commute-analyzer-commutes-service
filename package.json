@@ -8,9 +8,9 @@
     "lint:fix": "npm run lint -- --fix",
     "test": "jest --maxWorkers=1",
     "test:watch": "jest --watchAll --maxWorkers=1",
-    "dev": "nodemon --exec babel-node src/server.js",
+    "dev": "NODE_ENV=development nodemon --exec babel-node src/server.js",
     "build": "rimraf dist && babel src --out-dir dist",
-    "start": "npm run build && node dist/server.js"
+    "start": "NODE_ENV=production npm run build && node dist/server.js"
   },
   "husky": {
     "hooks": {
