@@ -1,8 +1,8 @@
 import express from "express";
-import ExampleRouter from "./example";
+import SummaryRouter from "./summary";
 import { ROUTE_PREFIX } from "config/route-settings";
 
 const appRouter = express.Router();
-appRouter.use(ExampleRouter);
+appRouter.use(SummaryRouter);
 
 export default express().use(ROUTE_PREFIX, appRouter);
