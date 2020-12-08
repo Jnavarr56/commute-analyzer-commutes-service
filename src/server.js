@@ -28,7 +28,7 @@ app.use(authenticationMiddleware);
 app.use(routes);
 
 const server = app.listen(PORT, () => {
-  console.log(`Listening on port: ${PORT}!`);
+  console.log(`Commutes service listening on port: ${PORT}!`);
 });
 
 export default server;
